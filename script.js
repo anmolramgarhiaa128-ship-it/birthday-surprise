@@ -902,10 +902,9 @@ teddyButton.addEventListener("click", () => {
 
 
 closeTeddyPopup.addEventListener("click", () => {
+
     finalTeddyPopup.classList.remove("show");
-    letterPaper.classList.remove("out");
-    teddyButton.disabled = false;
-    teddyButton.innerHTML = "🧸 Ask Teddy For The Message";
+
 });
 
 
@@ -918,5 +917,3 @@ finalTeddyPopup.addEventListener("click", (event) => {
     }
 
 });
-
-
