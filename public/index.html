@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Happy Birthday ❤️</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- =========================
+     OPENING COUNTDOWN
+========================= -->
+
+<div id="countdownScreen">
+
+    <div class="countdown-content">
+
+        <div id="countdownNumber">3</div>
+
+        <p>Something special is waiting for you... ✨</p>
+
+    </div>
+
+</div>
+
+    <!-- Canvas for future animations -->
+    <canvas id="canvas"></canvas>
+
+    <!-- Birthday Card -->
+    <div class="birthday-card">
+
+        <p class="small-text">
+            A SPECIAL DAY FOR YOU ✨
+        </p>
+
+        <h1>
+            Happy Birthday 🎂
+        </h1>
+
+        <h2>
+            To My Specialone ❤️
+        </h2>
+
+        <p class="message">
+            Today is all about celebrating you,
+            your smile, and all the beautiful moments ahead. I know i am far  from you but i want to make this day special to you because i really really miss you and i love you and i just wanna remeber you to you are soo special for me 😘
+        </p>
+
+        <button id="surpriseButton">
+         Open Your Surprise 🎁
+        </button>
+         </div>
+           <!-- Secret Letter -->
+<div class="letter-section">
+
+    <div class="envelope" id="envelope">
+        💌
+    </div>
+
+    <h2>Someone left you a secret message... 💕</h2>
+
+    <button id="openLetter">
+        Open Secret Letter 💌
+    </button>
+
+    <div id="letter" class="letter">
+        <h2>Dear Special Person ❤️</h2>
+
+        <p>
+            On your special day, I just want to say...
+        </p>
+
+        <p>
+            You deserve happiness, beautiful moments,
+            lots of laughter and all the wonderful things
+            life has to offer. ✨
+        </p>
+
+        <p>
+            May this birthday be the beginning of
+            something truly amazing! 🎂💖
+        </p>
+
+        <div class="signature">
+            With lots of love 💕
+        </div>
+    </div>
+
+</div>  
+           <!-- Surprise Gift Boxes -->
+
+
+<div class="gift-section">
+
+    <p class="small-text">THREE GIFTS ARE WAITING FOR YOU 🎁</p>
+
+    <h2>Choose Your Surprise 💝</h2>
+
+    <div class="gift-container">
+
+        <div class="gift-box" data-message="Roses Are Red Sky is blue I just Wantted to Say That Happy Birthday To you ❤️">
+            <div class="gift-icon">🎁</div>
+            <p>Gift 1</p>
+        </div>
+
+        <div class="gift-box" data-message="Roses Are Red Violets Are blue I Am So Lucky Cause I Have You💕">
+            <div class="gift-icon">🎁</div>
+            <p>Gift 2</p>
+        </div>
+
+        
+<div class="gift-box special-gift"
+     data-message="Well Done For Being Born Many Years Ago 😂💕 Imagine How Boring Your Life Would Be If You Did Not Have Me To Annoy You. 💖">
+
+    <div class="gift-icon">🎁</div>
+    <p>Gift 3</p>
+
+</div>
+
+    </div>
+</div>
+
+</div>
+
+
+<!-- Gift Popup -->
+
+<div id="giftPopup" class="gift-popup">
+
+    <div class="gift-popup-box">
+
+        <button id="closeGiftPopup" class="gift-close">×</button>
+
+        <div id="popupGift" class="popup-gift">🎁</div>
+
+        <h2 id="giftTitle">Surprise! 🎉</h2>
+
+        <p id="giftPopupMessage"></p>
+
+        <div id="giftReaction" class="gift-reaction">
+            🎉 💖 🎈 ✨ 🎂 🎈 💕
+        </div>
+
+    </div>
+
+</div>
+    <!-- =========================
+     3D BIRTHDAY CAKE
+========================= -->
+
+<div class="cake-section">
+
+    <p class="small-text">MAKE A WISH ✨</p>
+
+    <h2>Your Special Birthday Cake 🎂</h2>
+
+    <div class="cake-scene">
+
+        <div class="cake-3d">
+
+            <!-- Candles -->
+            <div class="candles">
+
+                <div class="candle">
+                    <div class="flame">🔥</div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame">🔥</div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame">🔥</div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame">🔥</div>
+                </div>
+
+                <div class="candle">
+                    <div class="flame">🔥</div>
+                </div>
+
+            </div>
+
+            <!-- Top frosting -->
+            <div class="cake-top-3d">
+
+                <div class="cream cream1"></div>
+                <div class="cream cream2"></div>
+                <div class="cream cream3"></div>
+
+                <span class="cherry cherry1">🍒</span>
+                <span class="cherry cherry2">🍓</span>
+                <span class="cherry cherry3">🍒</span>
+
+            </div>
+
+            <!-- Middle cake -->
+            <div class="cake-body-3d">
+
+                <div class="drip drip1"></div>
+                <div class="drip drip2"></div>
+                <div class="drip drip3"></div>
+                <div class="drip drip4"></div>
+
+                <div class="cake-message">
+                    Happy Birthday
+                    <br>
+                    <span>Mere Jnn ❤️</span>
+                </div>
+
+                <div class="sprinkles">
+                    ✨ 🍓 ✨ 🍫 ✨ 🍓 ✨
+                </div>
+
+            </div>
+
+            <!-- Bottom cake -->
+            <div class="cake-bottom-3d">
+
+                <span>❤️</span>
+                <span>🍫</span>
+                <span>❤️</span>
+                <span>🍓</span>
+                <span>❤️</span>
+
+            </div>
+
+        </div>
+
+        <!-- Cake plate -->
+        <div class="cake-plate"></div>
+
+        <!-- Cake shadow -->
+        <div class="cake-shadow"></div>
+
+    </div>
+
+    <button id="blowCandles">
+        Blow the Candles 🕯️💨
+    </button>
+
+    <div id="wishMessage" class="wish-message">
+        🎉 Make a wish! 🎉
+    </div>
+    <!-- LITTLE MESSAGE -->
+
+<div class="message-trigger">
+
+    <p class="small-text">A LITTLE MESSAGE FOR YOU ✨</p>
+
+    <button id="nightMessageButton">
+        💌 Open Little Message
+    </button>
+
+</div>
+
+
+<!-- NIGHT MESSAGE POPUP -->
+
+<div id="nightPopup" class="little-popup">
+
+    <div class="little-popup-box">
+
+        <button id="closeNightPopup" class="little-close">
+            ×
+        </button>
+
+        <div class="popup-heart">✨</div>
+
+        <h2>A Little Message For You 💕</h2>
+
+        <p>
+            Even among millions of stars,
+            some people shine a little brighter. ❤️
+        </p>
+
+        <div class="popup-highlight">
+            ✨ You are one of those stars. ✨
+        </div>
+
+    </div>
+        <!-- =========================
+     TEDDY GRAND FINALE
+========================= -->
+
+<section class="teddy-finale">
+
+    <p class="small-text">ONE LAST SURPRISE 💕</p>
+
+    <h2>Someone has a little gift for you... 👀</h2>
+
+    <div class="teddy-area">
+
+        <div id="teddy" class="teddy">
+
+            <div class="teddy-ears">
+                <div class="ear left-ear"></div>
+                <div class="ear right-ear"></div>
+            </div>
+
+            <div class="teddy-head">
+
+                <div class="teddy-eye left-eye"></div>
+                <div class="teddy-eye right-eye"></div>
+
+                <div class="teddy-muzzle">
+                    <div class="teddy-nose">♥</div>
+                    <div class="teddy-mouth">⌣</div>
+                </div>
+
+            </div>
+
+            <div class="teddy-body">
+
+                <div class="teddy-pocket">
+                    <div id="letterPaper" class="letter-paper">
+                        💌
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="teddy-arm left-arm"></div>
+            <div class="teddy-arm right-arm"></div>
+
+        </div>
+
+    </div>
+
+    <button id="teddyButton">
+        🧸 Ask Teddy For The Message
+    </button>
+
+</section>
+
+<!-- FINAL MESSAGE POPUP -->
+
+<div id="finalTeddyPopup" class="little-popup">
+
+    <div class="final-teddy-popup">
+
+        <button id="closeTeddyPopup" class="little-close">
+            ×
+        </button>
+
+        
+<img src="/hug.png"
+     class="exact-hug-image"
+     alt="Warm Hug">
+
+    </div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+</div>
+         <!-- Colorful Surprise Popup -->
+<div id="surprisePopup" class="popup-overlay">
+
+    <div class="popup-box">
+
+        <button id="closePopup" class="close-button">×</button>
+
+        <div class="popup-emoji">🎉🎂🎈</div>
+        <h2>Happy Birthday My Love ! 💖</h2>
+
+        <p>
+            Today is your special day! ✨
+            <br>
+           you are not just my love❤️ you are my whole world🌍 my happiness you are special in my life🫀 you are my everything  🌸
+        </p>
+
+        <div class="popup-hearts">
+            💕 💗 💖 💝 💕
+        </div>
+
+        <button id="closeSurprise" class="love-button">
+            Thank You! ❤️
+        </button>
+
+    </div>
+
+</div>
+        <!-- =========================
+     GRAND FINALE
+========================= -->
+
+<section class="finale-section">
+
+    <div class="finale-stars"></div>
+
+    <div class="finale-content">
+
+        <p class="small-text">ONE LAST SURPRISE ✨</p>
+
+        <h2>Wait... There's Something More 👀</h2>
+
+        <p class="finale-intro">
+            You reached the end... but I saved one special surprise just for you. 💖
+        </p>
+
+        <button id="finaleButton">
+            ✨ Reveal My Final Surprise ✨
+        </button>
+
+        <div id="finalMessage" class="final-message">
+
+            <div class="final-heart">💖</div>
+
+            <h1>Happy Birthday</h1>
+
+            <h2> ONCE AGAIN JANNU ❤️</h2>
+
+            <p>
+                May your life always be filled with
+                happiness, love, laughter and beautiful moments. ✨
+            </p>
+
+            <p>
+                No matter how many stars are in the sky,
+                you will always be one of the brightest. I don't know mera ehh surprise tade tk pojna eh j nhi kuki ma ehh first tym h bnya aa t tuhi mere nlo ehni dur oo t ma tnu kuj pej v nhi sagde pr ma ehne dor rah ke bs tnu eda de surpise de sagde i Hope tnu ehh pasand awe dekh lo ma special cake v pejia a tnu pr tuhi kha nhi sagde pr chlo koi ni tnu aage ni mitha pasand ta krke ma eda pejta  tade nlo jyada cha mnu h hunda a tade birthday da soooooooooooooooooo HAPPY BIRTHDAY TOOOOOO YOUUUUUU MRRRRRRRRR RAMGARHIAAAA MISSSSSSSS YOUUUUU DARLINGGGGGG  🌟
+            </p>
+
+            <div class="final-love">
+                💕 You are truly special 💕
+            </div>
+
+            <div class="final-emojis">
+                🎂 🎈 💖 ✨ 🥳 🎁 💕
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+            <script src="script.js"></script>
+</body>
+
+</html>
