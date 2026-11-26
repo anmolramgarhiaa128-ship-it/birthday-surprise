@@ -3221,3 +3221,58 @@ button:active {
     justify-content: center;
     align-items: center;
 }
+/* FINAL TEDDY POPUP FIX */
+
+#finalTeddyPopup {
+    position: fixed;
+    inset: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    z-index: 9999;
+}
+
+#finalTeddyPopup.show {
+    display: flex;
+}
+
+.final-teddy-popup {
+    position: relative !important;
+    width: min(430px, 90%) !important;
+    min-height: 350px;
+    padding: 55px 25px 30px !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.exact-hug-image {
+    position: relative !important;
+    display: block;
+    width: 100%;
+    max-width: 300px;
+    max-height: 300px;
+    height: auto;
+    object-fit: contain;
+    margin: auto;
+    transform: none !important;
+}
+
+.final-teddy-popup .little-close {
+    position: absolute !important;
+    top: 10px !important;
+    right: 12px !important;
+    z-index: 20;
+    width: 35px;
+    height: 35px;
+    padding: 0 !important;
+    line-height: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: none !important;
+}
