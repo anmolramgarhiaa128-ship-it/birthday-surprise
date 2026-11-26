@@ -918,23 +918,43 @@ finalTeddyPopup.addEventListener("click", (event) => {
 
 });
 
-.exact-hug-image {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-    margin: 0 auto;
-}
+
+/* Responsive Hug Image */
 .final-teddy-popup {
-    width: 90%;
-    max-width: 400px;
+    width: min(90vw, 520px) !important;
+    max-height: 90vh;
+    max-height: 90dvh;
     margin: auto;
+    padding: 12px;
     box-sizing: border-box;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.final-teddy-popup img {
-    width: 100%;
-    height: auto;
+.exact-hug-image {
     display: block;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 82vh;
+    max-height: 82dvh;
+    object-fit: contain;
+    margin: auto;
+}
+
+/* Mobile screen */
+@media screen and (max-width: 600px) {
+    .final-teddy-popup {
+        width: 94vw !important;
+        max-height: 88dvh;
+        padding: 8px;
+    }
+
+    .exact-hug-image {
+        width: 100% !important;
+        max-height: 78dvh;
+        object-fit: contain;
+    }
 }
