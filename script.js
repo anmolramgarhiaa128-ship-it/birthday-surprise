@@ -917,3 +917,24 @@ finalTeddyPopup.addEventListener("click", (event) => {
     }
 
 });
+
+.exact-hug-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto;
+}
+.final-teddy-popup {
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.final-teddy-popup img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
