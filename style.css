@@ -3232,3 +3232,46 @@ button:active {
     }
 }
 
+/* FIX: Hug image must stay inside popup */
+
+#finalTeddyPopup {
+    width: 100% !important;
+    box-sizing: border-box !important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 12px !important;
+}
+
+#finalTeddyPopup .final-teddy-popup {
+    width: min(90vw, 460px) !important;
+    max-width: 460px !important;
+    min-width: 0 !important;
+    box-sizing: border-box !important;
+    padding: 10px !important;
+    margin: auto !important;
+    overflow: hidden !important;
+}
+
+#finalTeddyPopup img.exact-hug-image {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 72vh !important;
+    object-fit: contain !important;
+    box-sizing: border-box !important;
+    margin: auto !important;
+}
+
+@media (max-width: 600px) {
+    #finalTeddyPopup .final-teddy-popup {
+        width: 92vw !important;
+        max-width: 360px !important;
+    }
+
+    #finalTeddyPopup img.exact-hug-image {
+        max-height: 65vh !important;
+    }
+}
+
