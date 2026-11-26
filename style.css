@@ -3194,3 +3194,41 @@ button:active {
     }
 }
 
+/* FINAL HUG IMAGE SIZE FIX */
+
+#finalTeddyPopup {
+    padding: 15px !important;
+    box-sizing: border-box !important;
+}
+
+#finalTeddyPopup .final-teddy-popup {
+    width: 90vw !important;
+    max-width: 420px !important;
+    max-height: 90vh !important;
+    margin: auto !important;
+    padding: 12px !important;
+    box-sizing: border-box !important;
+    overflow-y: auto !important;
+}
+
+#finalTeddyPopup .exact-hug-image {
+    display: block !important;
+    width: 100% !important;
+    max-width: 100% !important;
+    height: auto !important;
+    max-height: 75vh !important;
+    object-fit: contain !important;
+    margin: auto !important;
+}
+
+@media (max-width: 600px) {
+    #finalTeddyPopup .final-teddy-popup {
+        width: 94vw !important;
+        max-width: 360px !important;
+    }
+
+    #finalTeddyPopup .exact-hug-image {
+        max-height: 70vh !important;
+    }
+}
+
