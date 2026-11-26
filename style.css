@@ -3160,3 +3160,37 @@ button:active {
         min-width: 0;
     }
 }
+
+.final-teddy-popup {
+    width: min(90vw, 520px);
+    max-height: 90vh;
+    max-height: 90dvh;
+    margin: auto;
+    padding: 12px;
+    box-sizing: border-box;
+    overflow: auto;
+}
+
+.exact-hug-image {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    max-height: 82vh;
+    max-height: 82dvh;
+    object-fit: contain;
+    margin: auto;
+}
+
+@media (max-width: 600px) {
+    .final-teddy-popup {
+        width: 94vw;
+        max-height: 88dvh;
+        padding: 8px;
+    }
+
+    .exact-hug-image {
+        max-height: 78dvh;
+    }
+}
+
